@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>BMW & Mercedes Showcase</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BMW & Mercedes Showcase</title>
-    <!-- Bootstrap CSS & JS LINKING-->
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <script src="/js/bootstrap.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .card:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+    </style>
 </head>
+
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-light bg-warning">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">Motors Showcase</a>
+        <a class="navbar-brand" href="index.html">Motors Showcase</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHome">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarHome">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
@@ -33,36 +44,48 @@
     </div>
 </nav>
 
-<!-- Welcome Banner / Hero Section -->
+<!-- Hero Section -->
 <section class="container-fluid bg-dark text-white p-5 text-center">
     <h1>Welcome to Motors Showcase</h1>
     <p>Explore the finest BMW & Mercedes vehicles. Speed, luxury, and elegance all in one place.</p>
-    <a href="BMW.html" class="btn btn-primary me-4">Explore BMW</a>
-    <a href="Mercedes.html" class="btn btn-success">Explore Mercedes</a>
+    <a href="bmw.html" class="btn btn-primary me-4">Explore BMW</a>
+    <a href="mercedes.html" class="btn btn-success">Explore Mercedes</a>
 </section>
 
-<!-- Nav links and cards -->
+<!-- Main Cards -->
 <section class="container my-5">
+   <marquee behavior="scroll" direction="left" style="color: rgb(12, 12, 12); font-size: 30px;">Welcome to Motors Showcase - The Ultimate Car Experience!</marquee> <h3 class="text-danger text-center fw-bold mb-4">LOVE CARS? WE GOT YOU</h3>
+
     <div class="row g-4 text-center">
-        <b><marquee behavior="" direction="" style="font-family: Arial, Helvetica, sans-serif; color: red; font-size: xx-large;" >LOVE CARS? WE GOT YOU</marquee></b>
+
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
                 <img src="/images/josh-berquist-_4sWbzH5fp8-unsplash.jpg" class="card-img-top" alt="BMW">
                 <div class="card-body">
                     <h5 class="card-title">BMW Collection</h5>
-                    <p class="card-text">Discover our wide range of BMW vehicles — performance, luxury, and speed combined.</p>
-                    <a href="BMW.html" class="btn btn-primary">Visit BMW</a>
+                    <p class="card-text">
+                        BMW delivers ultimate driving pleasure with turbocharged engines,
+                        precision steering, and motorsport-inspired performance.
+                        From daily luxury sedans to track-ready M models,
+                        BMW combines power and technology seamlessly.
+                    </p>
+                    <a href="bmw.html" class="btn btn-primary">Visit BMW</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-6">
             <div class="card h-100 shadow-sm">
-                <img src="/images/maybach1.avif" class="card-img-top" alt="Mercedes">
+                <img src="images/maybach1.avif" class="card-img-top" alt="Mercedes">
                 <div class="card-body">
                     <h5 class="card-title">Mercedes Collection</h5>
-                    <p class="card-text">Explore our premium Mercedes models — elegance, comfort, and top-notch engineering.</p>
-                    <a href="Mercedes.html" class="btn btn-success">Visit Mercedes</a>
+                    <p class="card-text">
+                        Mercedes-Benz defines automotive luxury with advanced engineering,
+                        intelligent safety systems, and refined interiors.
+                        Whether it's AMG performance or executive comfort,
+                        Mercedes leads in innovation and prestige.
+                    </p>
+                    <a href="mercedes.html" class="btn btn-success">Visit Mercedes</a>
                 </div>
             </div>
         </div>
@@ -70,10 +93,97 @@
     </div>
 </section>
 
+<!-- Featured Models Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Featured Performance Models</h2>
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="/images/m4cs1.jpg" class="card-img-top" alt="BMW M4">
+                <div class="card-body">
+                    <h5 class="card-title">BMW M4 Competition</h5>
+                    <p class="card-text">
+                        Engine: 3.0L Twin-Turbo Inline-6<br>
+                        Horsepower: 503 HP<br>
+                        0–100 km/h: 3.8 seconds<br>
+                        Drivetrain: AWD (xDrive)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="/images/Amg Gt Matte Black.jpg" class="card-img-top" alt="AMG GT">
+                <div class="card-body">
+                    <h5 class="card-title">Mercedes-AMG GT</h5>
+                    <p class="card-text">
+                        Engine: 4.0L V8 Biturbo<br>
+                        Horsepower: 523 HP<br>
+                        0–100 km/h: 3.7 seconds<br>
+                        Drive: Rear-Wheel Drive
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="/images/ix7.jpg" class="card-img-top" alt="BMW i7">
+                <div class="card-body">
+                    <h5 class="card-title">BMW i7 (Electric Luxury)</h5>
+                    <p class="card-text">
+                        Power: 536 HP Electric Motor<br>
+                        Range: 625 km<br>
+                        Interior: Executive Lounge Package<br>
+                        Technology: BMW Curved Display
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Comparison Section -->
+<section class="container-fluid bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">BMW vs Mercedes</h2>
+        <div class="row text-center">
+
+            <div class="col-md-6">
+                <h4 class="text-primary">Why Choose BMW?</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Driver-focused performance</li>
+                    <li class="list-group-item">Sporty handling and precision</li>
+                    <li class="list-group-item">Modern digital cockpit</li>
+                    <li class="list-group-item">Strong M Performance lineup</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h4 class="text-success">Why Choose Mercedes?</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Luxury-first engineering</li>
+                    <li class="list-group-item">Premium interior comfort</li>
+                    <li class="list-group-item">Advanced safety technology</li>
+                    <li class="list-group-item">Powerful AMG performance models</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- About Section -->
-<section class="container my-5 text-center" style="background-color: orange;">
+<section class="container my-5 text-center bg-warning p-4">
     <h2>About Us</h2>
-    <p>We are motors enthusiasts providing a showcase of the finest vehicles, certified by professional racing groups and automotive experts. Whether you love speed, luxury, or both, we’ve got you covered.</p>
+    <p>
+        We are motors enthusiasts providing a showcase of the finest vehicles,
+        certified by professional racing groups and automotive experts.
+        Whether you love speed, luxury, or both, we’ve got you covered.
+    </p>
 </section>
 
 <!-- Footer -->
